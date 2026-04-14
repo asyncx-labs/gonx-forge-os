@@ -1,3 +1,5 @@
+Pacotes instalados na Distro
+
 acl_2.3.2.orig.tar.xz
 97203a72cae99ab89a067fe2210c1cbf052bc492b479eca7d226d9830883b0bd
 
