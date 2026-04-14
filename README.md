@@ -1,6 +1,8 @@
 <img width="1024" height="543" alt="Captura de tela de 2026-04-13 15-17-02" src="https://github.com/user-attachments/assets/b4c00b30-63e9-4c9a-b308-7d22a941d742" />
 
 # 🛠️ Gonx Forge OS v1.0
+[![Download v1.0](https://img.shields.io/badge/Download-Forge_OS_v1.0-blue?style=for-the-badge&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.0.0/gonx-forge-os-v1.qcow2)
+
 > **A minimal, bit-by-bit Linux distribution built from scratch (LFS 12.3).**
 
 ![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
