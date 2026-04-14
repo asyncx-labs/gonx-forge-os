@@ -58,7 +58,7 @@ O Gonx Forge OS vem somente com funcionalidades básicas por design. Teste suas 
 
 ```bash
 # Baixar e extrair
-wget [http://www.roland-riegel.de/nload/nload-0.7.4.tar.gz](http://www.roland-riegel.de/nload/nload-0.7.4.tar.gz) --no-check-certificate
+cd /sources && wget http://www.roland-riegel.de/nload/nload-0.7.4.tar.gz --no-check-certificate
 tar -xvf nload-0.7.4.tar.gz && cd nload-0.7.4
 
 # Compilar e Instalar
