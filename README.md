@@ -33,7 +33,7 @@ O sistema é distribuído como uma imagem `.qcow2` otimizada para ambientes de v
 3. Crie uma VM (2GB RAM / 1 vCPU).
 4. **Credenciais Padrão:**
    - **User:** `root`
-   - **Pass:** `asyncx`
+   - **Pass:** `root`
 
 ---
 
