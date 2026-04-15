@@ -15,9 +15,10 @@ Apenas a build estável mais recente do arquivo `.qcow2` é mantida oficialmente
 Nesse modelo o processo de correção segue esta lógica simples:
 
 1.  **Divulgação:** Ao identificarmos uma falha em um componente (ex: OpenSSH, Kernel), publicaremos um **Security Advisory** no GitHub.
-2.  **O Patch é a Receita:** Não enviaremos um binário atualizado. Em vez disso, forneceremos as **instruções e scripts de compilação** necessários para que você mesmo aplique a correção.
+2.  **O Patch é a Receita:** Não enviaremos um binário atualizado. Em vez disso, forneceremos as **instruções** necessários para que você mesmo aplique a correção.
 3.  **Soberania:** É responsabilidade do usuário baixar o novo código-fonte oficial, validar os hashes e recompilar o componente afetado dentro do seu ambiente.
-4.  **Nova Build:** Periodicamente, lançaremos uma nova imagem `.qcow2` já atualizada para novas instalações.
+4. **Comunidade:** A aba **Discussions** pode ser usada para trocar informações sobre como realizar patches específicos, mas a execução final é de responsabilidade do desenvolvedor.
+5.  **Nova Build:** Periodicamente, lançaremos uma nova imagem `.qcow2` já atualizada para novas instalações.
 
 ## Reportando uma Vulnerabilidade
 **Não abra Issues públicas para falhas de segurança.** Ajude-nos com a Divulgação Responsável:
