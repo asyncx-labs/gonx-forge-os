@@ -1,0 +1,40 @@
+name: "🐞 Bug Report"
+description: "Reporte um erro técnico"
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar! Por favor, forneça o máximo de detalhes técnicos sobre a falha.
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Ambiente de Execução
+      options:
+        - Proxmox (KVM)
+        - VMware ESXi / Workstation
+        - VirtualBox
+        - Bare Metal (Hardware Físico)
+        - QEMU (Direct)
+    validations:
+      required: true
+  - type: input
+    id: kernel_version
+    attributes:
+      label: Versão do Kernel
+      placeholder: "Ex: 6.13.4"
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Passos para reproduzir o erro
+      description: "Detalhe o o procedimento"
+      placeholder: "1. Inicializei o sistema... 2. Tentei compilar o pacote X..."
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs ou Mensagens de Erro
+      description: "Copie e cole aqui a saída do terminal ou dmesg."
+      render: shell
