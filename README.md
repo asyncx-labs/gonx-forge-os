@@ -47,15 +47,18 @@ qm importdisk 100 gonx-forge-v1.qcow2 local-lvm
    - **User:** `root`
    - **Pass:** `root`
 
-Acesso ssh:
+### Acesso ssh:
 
 ```bash
-# Verifique o ip atribuido
-ip a
-
-ssh root@IP_ATRIBUIDO 
+# Verifique o ip atribuido no bash da máquina
+-bash-5.2# ip a
 ```
 
+### Acesse do seu terminal com User e Pass:
+
+```bash
+ssh root@IP_ATRIBUIDO 
+```
 ---
 
 ## Escolha um projeto
