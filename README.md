@@ -1,7 +1,14 @@
+# Gonx Forge OS v1.0
+
 <img width="1024" height="543" alt="Captura de tela de 2026-04-13 15-17-02" src="https://github.com/user-attachments/assets/b4c00b30-63e9-4c9a-b308-7d22a941d742" />
 
-# Gonx Forge OS v1.0
-[![Download v1.0](https://img.shields.io/badge/Download-Forge_OS_v1.0-blue?style=for-the-badge&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.0.0/gonx-forge-os-v1.qcow2)
+---
+
+[![Download v1.0 PROXMOX](https://img.shields.io/badge/Download-Forge_OS_v1.0-blue?style=for-the-badge&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.0.0/gonx-forge-os-v1.qcow2)
+
+[![Download v1.0 VIRTUALBOX](https://img.shields.io/badge/Download-OVA_(VirtualBox)-6222C0?style=for-the-badge&logo=virtualbox&logoColor=white)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.0.0vbox/gonx-forge-os-v1.ova)
+
+
 
 > **A minimal, bit-by-bit Linux distribution built from scratch (LFS 12.3).**
 
@@ -26,11 +33,17 @@ Gonx Forge OS é um projeto para engenheiros de sistemas. Se você já dominou o
 
 ---
 
-## Como Iniciar com Proxmox 
+## Instalação no Proxmox 
 
 Para instalar a versão `.qcow2` otimizada para ambientes de virtualização.
 
 1. Baixe o arquivo na seção [Releases](https://github.com/asyncx-labs/gonx-forge-os/releases).
+2. Verifique a integridade do arquivo baixado com o comando
+```bash
+sha256sum gonx-forge-os-v1.qcow2
+
+# 55c461b6ceab362d9fda8963421ce3a27ed139e2387fc77c369b871a467528c4
+```
 2. Importe para o storage do seu hypervisor.
 3. Crie uma VM (2GB RAM / 1 vCPU).
 4. Vincule o disco com o PID da vm criada pelo shell do proxmox:
@@ -59,6 +72,42 @@ qm importdisk 100 gonx-forge-v1.qcow2 local-lvm
 ```bash
 ssh root@IP_ATRIBUIDO 
 ```
+---
+
+## Instalação no VirualBox
+
+Para instalar a versão `.ova` pré configurada.
+
+1. Baixe o arquivo na seção [Releases](https://github.com/asyncx-labs/gonx-forge-os/releases).
+2. Verifique a integridade do arquivo baixado com o comando
+```bash
+sha256sum gonx-forge-os-v1.ova
+
+# 8b73f5044d8ba716a02c62389ab4824ae9cd648c28e3528d354dfbb2c4afef76
+```
+
+3. Abra o VirtualBox e vá em Arquivo > Importar Appliance (Import Appliance).
+
+4. Selecione o arquivo .ova e siga as instruções de importação.
+
+- O hardware já está otimizado (2GB RAM / 1 vCPU).
+
+- O adaptador de rede está configurado como NAT com Port Forwarding.
+
+- Acesso via SSH em modo localhost para desenvolvimento
+
+
+No terminal da sua máquina
+
+
+```bash
+ssh root@127.0.0.1 -p 2222
+
+```
+
+User: root
+Pass: root
+
 ---
 
 ## Escolha um projeto
