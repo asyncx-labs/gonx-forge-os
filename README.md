@@ -76,7 +76,7 @@ O **Gonx Forge OS** é um ecossistema aberto, que te desafia nas implementaçõe
 
 ---
 
-## Compile nload e teste as ferramentas de compilação
+## Teste inicial.
 
 O Gonx Forge OS esta equipado somente com funcionalidades básicas por design. Teste suas ferramentas de construção compilando seu primeiro binário:
 
