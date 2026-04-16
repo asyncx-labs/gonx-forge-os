@@ -4,9 +4,9 @@
 
 ---
 
-[![Download v1.0 PROXMOX](https://img.shields.io/badge/Download-Forge_OS_v1.0-blue?style=for-the-badge&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.0.0/gonx-forge-os-v1.qcow2)
+[![Download v1.0 PROXMOX](https://img.shields.io/badge/Download-Forge_OS_v1.0_PROXMOX-blue?style=for-the-badge&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.0.0/gonx-forge-os-v1.qcow2)
 
-[![Download v1.0 VIRTUALBOX](https://img.shields.io/badge/Download-OVA_(VirtualBox)-6222C0?style=for-the-badge&logo=virtualbox&logoColor=white)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.0.0vbox/gonx-forge-os-v1.ova)
+[![Download v1.0 VIRTUALBOX](https://img.shields.io/badge/Download-Forge_OS_v1.0_VIRTUALBOX-6222C0?style=for-the-badge&logo=virtualbox&logoColor=white)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.0.0vbox/gonx-forge-os-v1.ova)
 
 
 
