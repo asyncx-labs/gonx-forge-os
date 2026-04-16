@@ -1,14 +1,14 @@
-# Blueprint: Network Access & Security Stack (OpenSSH)
+## Blueprint: Openssh
 
 Este documento detalha o processo de compilação e integração da stack de acesso remoto no **Gonx Forge OS**. Diferente de distros convencionais, cada componente aqui é vinculado estaticamente às bibliotecas do sistema, garantindo integridade e performance.
 
-## Visão Geral da Arquitetura
-A implementação do serviço de SSH no Gonx segue uma cadeia de dependência linear necessária para suporte a criptografia, compressão e transferência de dados:
+### Visão Geral da Arquitetura
+A implementação do serviço de SSH segue uma cadeia de dependência linear necessária para suporte a criptografia, compressão e transferência de dados:
 `ZLIB` > `OpenSSL` > `OpenSSH`.
 
 ---
 
-## 1. ZLIB v1.3.1 
+### 1. ZLIB v1.3.1 
 
 ```bash
 cd /sources
@@ -22,7 +22,7 @@ make install
 
 ```
 ---
-## 2. OpenSSL v3.4.1
+### 2. OpenSSL v3.4.1
 
 ```bash
 cd /sources
@@ -40,7 +40,7 @@ make install
 ```
 ---
 
-## 3.OpenSSH v9.9p1
+### 3.OpenSSH v9.9p1
 
 ```bash
 cd /sources
@@ -57,7 +57,6 @@ cd openssh-9.9p1
 make -j$(nproc)
 make install
 ```
----
 
 ### Configurações iniciais
 
@@ -68,7 +67,6 @@ useradd -c "sshd PrivSep" -d /var/lib/sshd -g sshd -s /bin/false -u 50 sshd
 install -v -m700 -d /var/lib/sshd
 chown -v root:sys /var/lib/sshd
 ```
----
 
 ### Subindo serviço no systemd
 
@@ -88,7 +86,6 @@ Restart=always
 WantedBy=multi-user.target
 EOF
 ```
----
 
 ### Testando a sintaxe, habilitando e iniciando o Daemon
 

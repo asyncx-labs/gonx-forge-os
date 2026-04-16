@@ -1,6 +1,6 @@
 <img width="1024" height="543" alt="Captura de tela de 2026-04-13 15-17-02" src="https://github.com/user-attachments/assets/b4c00b30-63e9-4c9a-b308-7d22a941d742" />
 
-# 🛠️ Gonx Forge OS v1.0
+# Gonx Forge OS v1.0
 [![Download v1.0](https://img.shields.io/badge/Download-Forge_OS_v1.0-blue?style=for-the-badge&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.0.0/gonx-forge-os-v1.qcow2)
 
 > **A minimal, bit-by-bit Linux distribution built from scratch (LFS 12.3).**
@@ -13,48 +13,67 @@ Gonx Forge OS é um projeto para engenheiros de sistemas. Se você já dominou o
 
 ---
 
-## ⚡ Especificações Técnicas
+## Especificações Técnicas
 
 | Componente | Detalhe |
 | :--- | :--- |
-| **Base Engine** | Linux From Scratch 12.3 |
-| **Kernel** | 6.13.4 (Hardened Baseline) |
+| **Base Engine** | LFS 12.3 Build Base |
+| **Kernel** | 6.13.4 |
 | **Glibc** | 2.41 |
 | **Architecture** | x86_64 |
-| **Init System** | Systemd (Minimal) |
-| **Default Shell** | Bash (Custom ASCII MOTD) |
+| **Init System** | Systemd |
+| **Default Shell** | Bash |
 
 ---
 
-## 🚀 Como Iniciar (Proxmox / KVM)
+## Como Iniciar com Proxmox 
 
-O sistema é distribuído como uma imagem `.qcow2` otimizada para ambientes de virtualização.
+Para instalar a versão `.qcow2` otimizada para ambientes de virtualização.
 
 1. Baixe o arquivo na seção [Releases](https://github.com/asyncx-labs/gonx-forge-os/releases).
 2. Importe para o storage do seu hypervisor.
 3. Crie uma VM (2GB RAM / 1 vCPU).
-4. **Credenciais Padrão:**
+4. Vincule o disco com o PID da vm criada pelo shell do proxmox:
+
+```bash
+qm importdisk 100 gonx-forge-v1.qcow2 local-lvm
+```
+- Substitua 100 pelo ID da sua VM e local-lvm pelo nome do seu storage.
+- Vá em VM > Hardware.
+- Clique duas vezes em Unused Disk 0 e adicione-o como SCSI.
+- Vá em VM > Options > Boot Order e coloque o novo disco como primeira opção.
+
+5. **Credenciais Padrão:**
    - **User:** `root`
    - **Pass:** `root`
 
+Acesso ssh:
+
+```bash
+# Verifique o ip atribuido
+ip a
+
+ssh root@IP_ATRIBUIDO 
+```
+
 ---
 
-## 🛤️ Trilhas de Evolução (Build Your Own)
+## Escolha um projeto
 
-O **Gonx Forge OS** é um ecossistema aberto. Devido à sua natureza minimalista e ausência de telemetria ou serviços desnecessários, ele serve como a fundação ideal para:
+O **Gonx Forge OS** é um ecossistema aberto, que te desafia nas implementações e construção de sistemas úteis.
 
 | **Security & Infra** | **Development & Data** |
 | :--- | :--- |
-| 🛡️ **Cybersec & CTF Lab** | 🧠 **Private AI Node** |
-| ☁️ **Cloud Infrastructure** | 📊 **Big Data Pipeline** |
-| 🔒 **Hardened Server** | 🛠️ **Dev Sandbox (C/Rust)** |
-| 🌐 **Zero-Trust Gateway** | 🎮 **Bare Metal Gaming** |
-| 🛰️ **Edge Computing / IoT** | 🖥️ **Desktop Environment** |
-| 🔍 **Digital Forensics Lab** | 🔌 **Firmware Reversing** |
+| **Cybersec & CTF Lab** | **Private AI Node** |
+| **Cloud Infrastructure** | **Big Data Pipeline** |
+| **Hardened Server** | **Dev Sandbox (C/Rust)** |
+| **Zero-Trust Gateway** | **Bare Metal Gaming** |
+| **Edge Computing / IoT** | **Desktop Environment** |
+| **Digital Forensics Lab** | **Firmware Reversing** |
 
 ---
 
-## 🛠️ Desafio de Compilação: nload
+## Compile nload e teste as ferramentas de compilação
 
 O Gonx Forge OS esta equipado somente com funcionalidades básicas por design. Teste suas ferramentas de construção compilando seu primeiro binário:
 
