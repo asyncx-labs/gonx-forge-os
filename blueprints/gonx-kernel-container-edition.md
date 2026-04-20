@@ -4,10 +4,13 @@
 
 [![Kernel Version](https://img.shields.io/badge/Gonx_Kernel-7.0.0--container_edition-blue?style=flat-square&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/gonx-kernel-container-edition-7.0.0/gonx-kernel-7.0.0-ce.tar.xz)
 
-2. Faça a extração
+2. Verifique a integridade e faça a extração
 
 ```bash
 cd /sources
+
+sha256sum gonx-kernel-7.0.0-ce.tar.xz
+# c8b87c568322e5a28caf7d2f0500ba5a6b70347e32086f6a0b0cc387e6d2420e
 
 tar -xf gonx-kernel-7.0.0-ce.tar.xz
 
