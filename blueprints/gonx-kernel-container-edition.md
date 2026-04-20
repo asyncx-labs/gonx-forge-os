@@ -1,8 +1,8 @@
-## Instalação de Kernel customizado para conteiners, otimizado com zRAM e eliminação de serviços desnecessários
+## Instalação de Kernel customizado para containers, otimizado com zRAM e eliminação de serviços desnecessários
 
 1. Faça o Download do kernel pelo link abaixo:
 
-[![Download KERNEL GONX CE 7.0.0](https://img.shields.io/badge/Download-Forge_OS_v1.0_PROXMOX-blue?style=for-the-badge&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/gonx-kernel-container-edition-7.0.0/gonx-kernel-7.0.0-ce.tar.xz)
+[![Download KERNEL GONX CE 7.0.0](https://img.shields.io/badge/Download-Gonx-Kernel-7.0.0-Container-Edition-blue?style=for-the-badge&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/gonx-kernel-container-edition-7.0.0/gonx-kernel-7.0.0-ce.tar.xz)
 
 2. Faça a extração
 
@@ -69,5 +69,8 @@ cp -v System.map /boot/System.map-7.0.0-gonx-container-edition
 cp -v .config /boot/config-7.0.0-gonx-container-edition
 
 grub-mkconfig -o /boot/grub/grub.cfg
+
+reboot
 ```
 
+## Essa versão do kernel conta com a flag de proteção de boot, se não estiver de acordo com a configuração padrão em .config, basta desativa-la com comando 'make menuconfig', Security options > Enforce immutable init execution [*] desabilite > [], salve e faça o procedimento de compilação.
