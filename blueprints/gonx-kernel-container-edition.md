@@ -2,7 +2,7 @@
 
 1. Faça o Download do kernel pelo link abaixo:
 
-[![Download KERNEL GONX CE 7.0.0](https://img.shields.io/badge/Download-Gonx-Kernel-7.0.0-Container-Edition-blue?style=for-the-badge&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/gonx-kernel-container-edition-7.0.0/gonx-kernel-7.0.0-ce.tar.xz)
+[![Kernel Version](https://img.shields.io/badge/Gonx_Kernel-7.0.0--container_edition-blue?style=flat-square&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/gonx-kernel-container-edition-7.0.0/gonx-kernel-7.0.0-ce.tar.xz)
 
 2. Faça a extração
 
