@@ -4,13 +4,15 @@
 
 ---
 
-[![Download v1.0 PROXMOX](https://img.shields.io/badge/Download-Forge_OS_v1.0_PROXMOX-blue?style=for-the-badge&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.0.0/gonx-forge-os-v1.qcow2)
+[![Download v1.2 ISO](https://img.shields.io/badge/Download-Gonx_Forge_OS_v1.2_ISO-blue?style=for-the-badge&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.2iso/gonx-forge-os-v1.2.iso)
 
-[![Download v1.0 VIRTUALBOX](https://img.shields.io/badge/Download-Forge_OS_v1.0_VIRTUALBOX-6222C0?style=for-the-badge&logo=virtualbox&logoColor=white)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.0.0vbox/gonx-forge-os-v1.ova)
+[![Download v1.0 PROXMOX](https://img.shields.io/badge/Download-Gonx_Forge_OS_v1.0_PROXMOX-blue?style=for-the-badge&logo=linux)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.0.0/gonx-forge-os-v1.qcow2)
+
+[![Download v1.0 VIRTUALBOX](https://img.shields.io/badge/Download-Gonx_Forge_OS_v1.0_VIRTUALBOX-6222C0?style=for-the-badge&logo=virtualbox&logoColor=white)](https://github.com/asyncx-labs/gonx-forge-os/releases/download/v1.0.0vbox/gonx-forge-os-v1.ova)
 
 
 
-> **A minimal, bit-by-bit Linux distribution built from scratch (LFS 12.3).**
+> **A Linux distribution built from scratch.**
 
 ![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
 ![Kernel](https://img.shields.io/badge/kernel-6.13.4-black.svg)
