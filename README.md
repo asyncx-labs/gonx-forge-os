@@ -35,6 +35,41 @@ Gonx Forge OS é um projeto para engenheiros de sistemas. Se você já dominou o
 
 ---
 
+## Instalação via ISO 
+Para instalar o Gonx Forge OS de forma personalizada em discos físicos ou virtuais utilizando a mídia de instalação oficial.
+
+1. Preparação
+Baixe a ISO na seção [Releases](https://github.com/asyncx-labs/gonx-forge-os/releases).
+
+Verifique a integridade do arquivo:
+```bash
+sha256sum gonx-forge-os-v1.2.iso
+
+# 85b4c6a99843d3c61fcd10cec734a4cb6fe2abe288a2de7765219821b571974e
+```
+Mídia Física: Grave em um pendrive utilizando Rufus.
+
+Virtualização:
+- 512MB RAM 
+- 1 vCPU 
+- SATA
+
+2. Processo de Instalação
+O sistema iniciará em Modo Live. Entre com as credenciais padrão:
+
+User: root
+Pass: root
+
+No terminal, digite o comando:
+```bash
+gonx-install
+```
+3. Siga as instruções de instalação
+
+4. Desligue a maquina, remova a mídia de instalação e mude a ordem de boot.
+
+5. Basta acessar sua distro instalada com usuário root e a senha definida no processo de instalação.
+
 ## Instalação no Proxmox 
 
 Para instalar a versão `.qcow2` otimizada para ambientes de virtualização.
