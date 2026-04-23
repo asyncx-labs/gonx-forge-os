@@ -1,4 +1,4 @@
-# Gonx Forge OS v1.0
+# Gonx Forge OS
 
 <img width="1024" height="543" alt="Captura de tela de 2026-04-13 15-17-02" src="https://github.com/user-attachments/assets/b4c00b30-63e9-4c9a-b308-7d22a941d742" />
 
