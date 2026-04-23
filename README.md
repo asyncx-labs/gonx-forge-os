@@ -47,12 +47,7 @@ sha256sum gonx-forge-os-v1.2.iso
 
 # 85b4c6a99843d3c61fcd10cec734a4cb6fe2abe288a2de7765219821b571974e
 ```
-Mídia Física: Grave em um pendrive utilizando Rufus.
-
-Virtualização:
-- 512MB RAM 
-- 1 vCPU 
-- SATA
+Grave em um pendrive utilizando Rufus.
 
 2. Processo de Instalação
 O sistema iniciará em Modo Live. Entre com as credenciais padrão:
